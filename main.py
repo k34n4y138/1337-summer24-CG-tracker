@@ -34,7 +34,7 @@ def get_gsheet_data():
     sheet = service.spreadsheets().values().get(spreadsheetId=PARTICIPATION_SHEET_ID, range=PARTICIPATION_SHEET_RANGE).execute()
     values = sheet.get('values', [])
     fields = ['FILL_DATE', 'INTRA_LOGIN', 'CG_USERNAME', 'CG_URL','PARTICIPATED_PREVIOUSLY', 'PARTICIPATION_MOTIVE', 'CAMPUS']
-    return list(map(lambda x: dict(zip(fields, x)), values))
+    return list(map(lambda x: dict(zip(fields, x)), values))[1:] # first row is header
 
 
 def extract_cg_uuid(cg_url):
