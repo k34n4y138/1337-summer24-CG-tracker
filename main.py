@@ -139,6 +139,7 @@ def save_rankings(data):
 
 
 if __name__ == '__main__':
+    print("Starting at %s" % datetime.datetime.now())
     populate_from_gsheet()
     rankings = fetch_ranking()
     save_rankings(rankings)
