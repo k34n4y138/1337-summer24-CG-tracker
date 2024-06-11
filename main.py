@@ -71,7 +71,7 @@ def populate_from_gsheet():
             continue
         user = get_create_user(cg_uuid, row['CG_USERNAME'], row['INTRA_LOGIN'], row['CAMPUS'])
         if not user[1]: # grabbing a user from database without intra_login means user filled participation form later after competition started
-            DB_CURR.execute('UPDATE users SET intra_login = ?, intra_campus = ? WHERE id = ?', (row['INTRA_LOGIN'], row['CAMPUS'], user[0]))
+            DB_CURR.execute('UPDATE codingamer SET intra_login = ?, intra_campus = ? WHERE id = ?', (row['INTRA_LOGIN'], row['CAMPUS'], user[0]))
             DATABASE_CONNECTION.commit()
 
 
