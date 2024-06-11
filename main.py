@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import sqlite3,os, requests, datetime
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
