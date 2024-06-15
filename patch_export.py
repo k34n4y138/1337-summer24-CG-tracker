@@ -19,7 +19,8 @@ if not any('intra_avatar' in column for column in conn.execute('PRAGMA table_inf
     conn.execute('ALTER TABLE codingamer ADD COLUMN intra_avatar TEXT DEFAULT NULL')
 if not any('cg_avatar' in column for column in conn.execute('PRAGMA table_info(codingamer)')):
     conn.execute('ALTER TABLE codingamer ADD COLUMN cg_avatar TEXT DEFAULT NULL')
-
+if not any("staff_ban" in column for column in conn.execute('PRAGMA table_info(codingamer)')):
+    conn.execute('ALTER TABLE codingamer ADD COLUMN staff_ban BOOLEAN DEFAULT FALSE') # manual flagging for removal from the leaderboard.
 
 
 
@@ -66,7 +67,7 @@ db.commit()
 }
 """
 
-targets = conn.execute('SELECT id, intra_login, intra_avatar, cg_username, cg_avatar, intra_campus FROM codingamer WHERE intra_login IS NOT NULL').fetchall()
+targets = conn.execute('SELECT id, intra_login, intra_avatar, cg_username, cg_avatar, intra_campus FROM codingamer WHERE intra_login IS NOT NULL and staff_ban = 0').fetchall()
 
 export = []
 
