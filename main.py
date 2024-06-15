@@ -45,20 +45,22 @@ def extract_cg_uuid(cg_url):
     return _[-1] if len(_) and len(_[-1]) == 39 else None # submitted link is not a cg profile
 
 
-def get_create_user(cg_uuid, cg_username, intra_login, campus):
+def get_create_user(cg_uuid, cg_username, intra_login, campus, cg_avatar = None):
     '''
     check if user exists in the database, if not create a new user
     check order: cg_uuid -> intra_login
     '''
     DB_CURR.execute('SELECT id, intra_login, intra_campus, cg_uuid, cg_username FROM codingamer WHERE cg_uuid = ?', (cg_uuid,))
     user = DB_CURR.fetchone()
-    if user:
-        return user
-    NEW_USER = (intra_login, campus, cg_uuid, cg_username)
-    DB_CURR.execute('INSERT INTO codingamer (intra_login, intra_campus, cg_uuid, cg_username) VALUES (?, ?, ?, ?)', NEW_USER)
-    DATABASE_CONNECTION.commit()
-    DB_CURR.execute('SELECT id, intra_login, intra_campus, cg_uuid, cg_username FROM codingamer WHERE cg_uuid = ?', (cg_uuid,))
-    return DB_CURR.fetchone()
+    if not user:
+        NEW_USER = (intra_login, campus, cg_uuid, cg_username)
+        DB_CURR.execute('INSERT INTO codingamer (intra_login, intra_campus, cg_uuid, cg_username) VALUES (?, ?, ?, ?)', NEW_USER)
+        DATABASE_CONNECTION.commit()
+        DB_CURR.execute('SELECT id, intra_login, intra_campus, cg_uuid, cg_username FROM codingamer WHERE cg_uuid = ?', (cg_uuid,))
+        user = DB_CURR.fetchone()
+    if cg_avatar:
+        DB_CURR.execute('UPDATE codingamer SET cg_avatar = ? WHERE id = ?', (cg_avatar, user[0])) # update avatar
+    return user
 
 
 def populate_from_gsheet():
@@ -75,6 +77,11 @@ def populate_from_gsheet():
             DATABASE_CONNECTION.commit()
 
 
+def format_cg_avatar(cg_avatar):
+    if not cg_avatar:
+        return 'https://static.codingame.com/servlet/fileservlet?id=124500926983867'
+    base = "https://static.codingame.com/servlet/fileservlet?id={}&format=profile_avatar"
+    return base.format(cg_avatar)
 
 def fetch_ranking():
     response = requests.post(CG_LINK, json=CG_PAYLOAD)
@@ -85,7 +92,8 @@ def fetch_ranking():
             'user' : {
             'cg_uuid': user['codingamer']['publicHandle'],
             'username':user['pseudo'],
-            'online_since': user['codingamer'].get('onlineSince', None)
+            'online_since': user['codingamer'].get('onlineSince', None),
+            'avatar': format_cg_avatar(user['codingamer'].get('avatar', None)),
             },
             'ranking': {
             'session_uuid':user['testSessionHandle'],
@@ -134,7 +142,7 @@ def push_ranking_to_db(scrap_unit, codingamer_id):
 
 def save_rankings(data):
     for user in data: # user not guaranteed to be already in the database
-        db_user = get_create_user(user['user']['cg_uuid'], user['user']['username'], None, None)
+        db_user = get_create_user(user['user']['cg_uuid'], user['user']['username'], None, None, user['user']['avatar'])
         push_ranking_to_db(user, db_user[0])
 
 
