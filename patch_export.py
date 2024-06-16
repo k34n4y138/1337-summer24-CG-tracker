@@ -2,8 +2,8 @@ import sqlite3, requests, time, json
 
 
 
-INTRA_UID = 'u-s4t2ud-f2f56b1301f6140a758d6622f62730d3deb221be1fa9a374bb5281e842f0e7d5'
-INTRA_SECRET = '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'
+INTRA_UID = 'XXXXX'
+INTRA_SECRETgit = 'XXXXXX'
 
 
 """
