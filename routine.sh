@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git pull
+
 source venv/bin/activate
 
 # scrap 
