@@ -45,7 +45,7 @@
         class="d-flex flex-row gap-2 gap-sm-5 justify-content-center align-items-center">
         <div id="leaderboard-5" class="position-relative d-flex flex-column justify-content-center align-items-center"
           style="top:50px">
-          <p class="display-5" >5<sup style="font-size:12pt">th</sup></p>
+          <p class="display-5 top-5" onclick="toggle_school_global_rank(this)" data-rank-swap="5"><span class="rank">5</span><sup class="ordinal" style="font-size:12pt">th</sup></p>
           <div class="position-relative">
             <img src="imgs/1337.png" class="intra-image">
             <img src="imgs/1337.png" class="mini-image" style="right:-10%;bottom:0">
@@ -57,7 +57,7 @@
         </div>
         <div id="leaderboard-3" class="position-relative d-flex flex-column justify-content-center align-items-center"
         style="top:0px">
-        <p class=" display-5">3<sup style="font-size:12pt">rd</sup></p>
+        <p class="display-5 top-5" onclick="toggle_school_global_rank(this)" data-rank-swap="3"><span class="rank">3</span><sup class="ordinal" style="font-size:12pt">rd</sup></p>
         <div class="position-relative">
           <img src="imgs/1337.png" class="intra-image">
           <img src="imgs/1337.png" class="mini-image" style="right:-10%;bottom:0">
@@ -69,7 +69,7 @@
       </div>
       <div id="leaderboard-1" class="position-relative d-flex flex-column justify-content-center align-items-center"
           style="top:-50px">
-          <p class="display-5" >1<sup style="font-size:12pt">st</sup></p>
+          <p class="display-5 top-5" onclick="toggle_school_global_rank(this)" data-rank-swap="1"><span class="rank">1</span><sup class="ordinal" style="font-size:12pt">st</sup></p>
           <div class="position-relative">
             <img src="imgs/1337.png" class="intra-image">
             <img src="imgs/1337.png" class="mini-image" style="right:-10%;bottom:0">
@@ -81,7 +81,7 @@
         </div>
         <div id="leaderboard-2" class="position-relative d-flex flex-column justify-content-center align-items-center"
           style="top:0px">
-          <p class="display-5" >2<sup style="font-size:12pt">nd</sup></p>
+          <p class="display-5 top-5" onclick="toggle_school_global_rank(this)" data-rank-swap="2"><span class="rank">2</span><sup class="ordinal" style="font-size:12pt">nd</sup></p>
           <div class="position-relative">
             <img src="imgs/1337.png" class="intra-image">
             <img src="imgs/1337.png" class="mini-image" style="right:-10%;bottom:0">
@@ -93,7 +93,7 @@
         </div>
         <div id="leaderboard-4" class="position-relative d-flex flex-column justify-content-center align-items-center"
           style="top:50px">
-          <p class="display-5">4<sup style="font-size:12pt">th</sup></p>
+          <p class="display-5 top-5" onclick="toggle_school_global_rank(this)" data-rank-swap="4"><span class="rank">4</span><sup class="ordinal" style="font-size:12pt">th</sup></p>
           <div class="position-relative">
             <img src="imgs/1337.png" class="intra-image">
             <img src="imgs/1337.png" class="mini-image" style="right:-10%;bottom:0">
@@ -155,6 +155,7 @@
         // box.setAttribute("onclick", "window.location.href = 'info.html?login=" + data[i].intra_login + "'");
         // append cursor pointer to styles
         // box.setAttribute("style", box.getAttribute("style") + ";cursor:pointer");
+        box.getElementsByTagName("p")[0].setAttribute("data-rank-swap", data[i].global_rank);
         box.getElementsByClassName("intra-image")[0].setAttribute("src", data[i].intra_avatar);
         box.getElementsByClassName("mini-image")[0].setAttribute("src", data[i].cg_avatar);
         box.getElementsByClassName("mini-image")[1].setAttribute("src", "imgs/" + data[i].league.split("_")[0].toLowerCase() + ".png");
@@ -219,6 +220,24 @@
       }
     }
 
+    function get_ordinal(n){
+      let s = ["th", "st", "nd", "rd"],
+      v = n % 100;
+      return (s[(v - 20) % 10] || s[v] || s[0]);
+    }
+
+    function toggle_school_global_rank(elem){
+      // flip the ranks for the top 5
+
+      let ranks = document.querySelectorAll("[data-rank-swap]");
+      ranks.forEach(rank => {
+        let current = rank.getElementsByClassName("rank")[0].innerHTML;
+        let swap = rank.getAttribute("data-rank-swap");
+        rank.getElementsByClassName("rank")[0].innerHTML = swap;
+        rank.getElementsByClassName("ordinal")[0].innerHTML = get_ordinal(swap);
+        rank.setAttribute("data-rank-swap", current);
+      });
+    }
 
     function fetch_leaderboard() {
       fetch("data.json")
