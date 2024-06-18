@@ -114,3 +114,7 @@ td {
         display: none;
     }
 }
+
+.top-5 {
+    cursor: pointer;
+}
