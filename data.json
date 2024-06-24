@@ -9,7 +9,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=105929803050881&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/3.14IQ",
         "school_rank": 1,
-        "global_rank": 10,
+        "global_rank": 9,
         "league": "legend"
     },
     {
@@ -39,6 +39,19 @@
         "league": "gold"
     },
     {
+        "id": 75,
+        "intra_login": "alimouri",
+        "intra_avatar": "https://cdn.intra.42.fr/users/98bc64662c9fb8b1b0efdf21024b9cd5/medium_alimouri.JPG",
+        "intra_campus": "BG",
+        "intra_url": "https://profile.intra.42.fr/users/alimouri",
+        "cg_username": "alimouri",
+        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=97032540908983&format=profile_avatar",
+        "cg_url": "https://www.codingame.com/profile/alimouri",
+        "school_rank": 4,
+        "global_rank": 108,
+        "league": "gold"
+    },
+    {
         "id": 60,
         "intra_login": "nmahi",
         "intra_avatar": "https://cdn.intra.42.fr/users/72c4d410ddff52ea66d680e5989e5654/medium_nmahi.JPG",
@@ -47,8 +60,8 @@
         "cg_username": "_CupCake",
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=116622304889002&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/_CupCake",
-        "school_rank": 4,
-        "global_rank": 116,
+        "school_rank": 5,
+        "global_rank": 120,
         "league": "gold"
     },
     {
@@ -60,8 +73,8 @@
         "cg_username": "achrafstr",
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=116832802908607&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/achrafstr",
-        "school_rank": 5,
-        "global_rank": 155,
+        "school_rank": 6,
+        "global_rank": 161,
         "league": "gold"
     },
     {
@@ -73,60 +86,21 @@
         "cg_username": "yrhiba",
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=116406167209062&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/yrhiba",
-        "school_rank": 6,
-        "global_rank": 166,
-        "league": "gold"
-    },
-    {
-        "id": 92,
-        "intra_login": "aamajane",
-        "intra_avatar": "https://cdn.intra.42.fr/users/51fd74d69ffc4eae2f294f0507fbe00b/medium_aamajane.jpg",
-        "intra_campus": "BG",
-        "intra_url": "https://profile.intra.42.fr/users/aamajane",
-        "cg_username": "OB2",
-        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=96068201798357&format=profile_avatar",
-        "cg_url": "https://www.codingame.com/profile/OB2",
         "school_rank": 7,
-        "global_rank": 182,
+        "global_rank": 165,
         "league": "gold"
     },
     {
-        "id": 75,
-        "intra_login": "alimouri",
-        "intra_avatar": "https://cdn.intra.42.fr/users/98bc64662c9fb8b1b0efdf21024b9cd5/medium_alimouri.JPG",
+        "id": 9,
+        "intra_login": "zsaoud",
+        "intra_avatar": "https://cdn.intra.42.fr/users/a54cb2d96c00b3afcd7190baaa9ce4bf/medium_zsaoud.JPG",
         "intra_campus": "BG",
-        "intra_url": "https://profile.intra.42.fr/users/alimouri",
-        "cg_username": "alimouri",
-        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=97032540908983&format=profile_avatar",
-        "cg_url": "https://www.codingame.com/profile/alimouri",
+        "intra_url": "https://profile.intra.42.fr/users/zsaoud",
+        "cg_username": "zsaoud",
+        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=124500926983867",
+        "cg_url": "https://www.codingame.com/profile/zsaoud",
         "school_rank": 8,
-        "global_rank": 192,
-        "league": "gold"
-    },
-    {
-        "id": 101,
-        "intra_login": "ogorfti",
-        "intra_avatar": "https://cdn.intra.42.fr/users/a5484685e10e1bd06bbfb28b359167a5/medium_ogorfti.jpg",
-        "intra_campus": "MED",
-        "intra_url": "https://profile.intra.42.fr/users/ogorfti",
-        "cg_username": "osama",
-        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125012526979171&format=profile_avatar",
-        "cg_url": "https://www.codingame.com/profile/osama",
-        "school_rank": 9,
-        "global_rank": 204,
-        "league": "gold"
-    },
-    {
-        "id": 97,
-        "intra_login": "Kchaouki",
-        "intra_avatar": "https://cdn.intra.42.fr/users/98ab71505997b6ba6b22d936b22b216e/medium_kchaouki.jpg",
-        "intra_campus": "MED",
-        "intra_url": "https://profile.intra.42.fr/users/Kchaouki",
-        "cg_username": "Chouks",
-        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=117220080459731&format=profile_avatar",
-        "cg_url": "https://www.codingame.com/profile/Chouks",
-        "school_rank": 10,
-        "global_rank": 211,
+        "global_rank": 185,
         "league": "gold"
     },
     {
@@ -138,8 +112,47 @@
         "cg_username": "youssef_lamkhantar",
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=117161683039785&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/youssef_lamkhantar",
+        "school_rank": 9,
+        "global_rank": 201,
+        "league": "gold"
+    },
+    {
+        "id": 92,
+        "intra_login": "aamajane",
+        "intra_avatar": "https://cdn.intra.42.fr/users/51fd74d69ffc4eae2f294f0507fbe00b/medium_aamajane.jpg",
+        "intra_campus": "BG",
+        "intra_url": "https://profile.intra.42.fr/users/aamajane",
+        "cg_username": "OB2",
+        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=96068201798357&format=profile_avatar",
+        "cg_url": "https://www.codingame.com/profile/OB2",
+        "school_rank": 10,
+        "global_rank": 202,
+        "league": "gold"
+    },
+    {
+        "id": 97,
+        "intra_login": "Kchaouki",
+        "intra_avatar": "https://cdn.intra.42.fr/users/98ab71505997b6ba6b22d936b22b216e/medium_kchaouki.jpg",
+        "intra_campus": "MED",
+        "intra_url": "https://profile.intra.42.fr/users/Kchaouki",
+        "cg_username": "Chouks",
+        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=117220080459731&format=profile_avatar",
+        "cg_url": "https://www.codingame.com/profile/Chouks",
         "school_rank": 11,
         "global_rank": 214,
+        "league": "gold"
+    },
+    {
+        "id": 101,
+        "intra_login": "ogorfti",
+        "intra_avatar": "https://cdn.intra.42.fr/users/a5484685e10e1bd06bbfb28b359167a5/medium_ogorfti.jpg",
+        "intra_campus": "MED",
+        "intra_url": "https://profile.intra.42.fr/users/ogorfti",
+        "cg_username": "osama",
+        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125012526979171&format=profile_avatar",
+        "cg_url": "https://www.codingame.com/profile/osama",
+        "school_rank": 12,
+        "global_rank": 217,
         "league": "gold"
     },
     {
@@ -151,21 +164,8 @@
         "cg_username": "Tianito",
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125230906077781&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/Tianito",
-        "school_rank": 12,
-        "global_rank": 260,
-        "league": "gold"
-    },
-    {
-        "id": 131,
-        "intra_login": "rrhnizar",
-        "intra_avatar": "https://cdn.intra.42.fr/users/76e42e50151574046bd2759704bda6cc/medium_rrhnizar.jpg",
-        "intra_campus": "MED",
-        "intra_url": "https://profile.intra.42.fr/users/rrhnizar",
-        "cg_username": "Horse-Rider",
-        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=117498364018993&format=profile_avatar",
-        "cg_url": "https://www.codingame.com/profile/Horse-Rider",
         "school_rank": 13,
-        "global_rank": 266,
+        "global_rank": 228,
         "league": "gold"
     },
     {
@@ -178,7 +178,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=115948866527502&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/(Bot *)~wis",
         "school_rank": 14,
-        "global_rank": 267,
+        "global_rank": 273,
         "league": "gold"
     },
     {
@@ -191,20 +191,20 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=116146341277837&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/zlakhdar",
         "school_rank": 15,
-        "global_rank": 281,
+        "global_rank": 274,
         "league": "gold"
     },
     {
-        "id": 9,
-        "intra_login": "zsaoud",
-        "intra_avatar": "https://cdn.intra.42.fr/users/a54cb2d96c00b3afcd7190baaa9ce4bf/medium_zsaoud.JPG",
-        "intra_campus": "BG",
-        "intra_url": "https://profile.intra.42.fr/users/zsaoud",
-        "cg_username": "zsaoud",
-        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=124500926983867",
-        "cg_url": "https://www.codingame.com/profile/zsaoud",
+        "id": 131,
+        "intra_login": "rrhnizar",
+        "intra_avatar": "https://cdn.intra.42.fr/users/76e42e50151574046bd2759704bda6cc/medium_rrhnizar.jpg",
+        "intra_campus": "MED",
+        "intra_url": "https://profile.intra.42.fr/users/rrhnizar",
+        "cg_username": "Horse-Rider",
+        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=117498364018993&format=profile_avatar",
+        "cg_url": "https://www.codingame.com/profile/Horse-Rider",
         "school_rank": 16,
-        "global_rank": 306,
+        "global_rank": 275,
         "league": "gold"
     },
     {
@@ -217,7 +217,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=105928847169690&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/FLYTOOX",
         "school_rank": 17,
-        "global_rank": 328,
+        "global_rank": 331,
         "league": "gold"
     },
     {
@@ -230,7 +230,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125181426300875&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/fablogic ",
         "school_rank": 18,
-        "global_rank": 357,
+        "global_rank": 358,
         "league": "gold"
     },
     {
@@ -243,20 +243,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=124500926983867",
         "cg_url": "https://www.codingame.com/profile/mtaib",
         "school_rank": 19,
-        "global_rank": 360,
-        "league": "gold"
-    },
-    {
-        "id": 102,
-        "intra_login": "aechaoub",
-        "intra_avatar": "https://cdn.intra.42.fr/users/419855509671b0052ed65cb3eebe3250/medium_aechaoub.jpg",
-        "intra_campus": "MED",
-        "intra_url": "https://profile.intra.42.fr/users/aechaoub",
-        "cg_username": "aizen-",
-        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125118963692445&format=profile_avatar",
-        "cg_url": "https://www.codingame.com/profile/aizen-",
-        "school_rank": 20,
-        "global_rank": 432,
+        "global_rank": 367,
         "league": "gold"
     },
     {
@@ -268,8 +255,8 @@
         "cg_username": "HMMD",
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125118107147235&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/HMMD",
-        "school_rank": 21,
-        "global_rank": 473,
+        "school_rank": 20,
+        "global_rank": 468,
         "league": "gold"
     },
     {
@@ -281,8 +268,8 @@
         "cg_username": "Stirner555",
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=96563027644931&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/Stirner555",
-        "school_rank": 22,
-        "global_rank": 479,
+        "school_rank": 21,
+        "global_rank": 480,
         "league": "gold"
     },
     {
@@ -294,8 +281,8 @@
         "cg_username": "_Genesis",
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=73499061010347&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/_Genesis",
-        "school_rank": 23,
-        "global_rank": 496,
+        "school_rank": 22,
+        "global_rank": 500,
         "league": "gold"
     },
     {
@@ -307,21 +294,8 @@
         "cg_username": "Dr_Mrogon",
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=61932925267478&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/Dr_Mrogon",
-        "school_rank": 24,
-        "global_rank": 507,
-        "league": "gold"
-    },
-    {
-        "id": 189,
-        "intra_login": "ael-fagr",
-        "intra_avatar": "https://cdn.intra.42.fr/users/e2bd172121bff6a67351889c0c18cdc6/medium_ael-fagr.jpg",
-        "intra_campus": "KH",
-        "intra_url": "https://profile.intra.42.fr/users/ael-fagr",
-        "cg_username": "CHIDO42",
-        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=123230340172690&format=profile_avatar",
-        "cg_url": "https://www.codingame.com/profile/CHIDO42",
-        "school_rank": 25,
-        "global_rank": 598,
+        "school_rank": 23,
+        "global_rank": 518,
         "league": "gold"
     },
     {
@@ -333,21 +307,34 @@
         "cg_username": "ra07ch",
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=99805420262470&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/ra07ch",
-        "school_rank": 26,
-        "global_rank": 601,
+        "school_rank": 24,
+        "global_rank": 591,
         "league": "gold"
     },
     {
-        "id": 31,
-        "intra_login": "Mabahani",
-        "intra_avatar": "https://cdn.intra.42.fr/users/45dc1c475973872d3547224407363fc8/medium_mabahani.JPG",
-        "intra_campus": "BG",
-        "intra_url": "https://profile.intra.42.fr/users/Mabahani",
-        "cg_username": "MABAHANI",
-        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=99794482438364&format=profile_avatar",
-        "cg_url": "https://www.codingame.com/profile/MABAHANI",
-        "school_rank": 27,
-        "global_rank": 631,
+        "id": 102,
+        "intra_login": "aechaoub",
+        "intra_avatar": "https://cdn.intra.42.fr/users/419855509671b0052ed65cb3eebe3250/medium_aechaoub.jpg",
+        "intra_campus": "MED",
+        "intra_url": "https://profile.intra.42.fr/users/aechaoub",
+        "cg_username": "aizen-",
+        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125118963692445&format=profile_avatar",
+        "cg_url": "https://www.codingame.com/profile/aizen-",
+        "school_rank": 25,
+        "global_rank": 608,
+        "league": "gold"
+    },
+    {
+        "id": 189,
+        "intra_login": "ael-fagr",
+        "intra_avatar": "https://cdn.intra.42.fr/users/e2bd172121bff6a67351889c0c18cdc6/medium_ael-fagr.jpg",
+        "intra_campus": "KH",
+        "intra_url": "https://profile.intra.42.fr/users/ael-fagr",
+        "cg_username": "CHIDO42",
+        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=123230340172690&format=profile_avatar",
+        "cg_url": "https://www.codingame.com/profile/CHIDO42",
+        "school_rank": 26,
+        "global_rank": 619,
         "league": "gold"
     },
     {
@@ -359,8 +346,21 @@
         "cg_username": "mofassa2",
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=116231603345156&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/mofassa2",
+        "school_rank": 27,
+        "global_rank": 648,
+        "league": "gold"
+    },
+    {
+        "id": 31,
+        "intra_login": "Mabahani",
+        "intra_avatar": "https://cdn.intra.42.fr/users/45dc1c475973872d3547224407363fc8/medium_mabahani.JPG",
+        "intra_campus": "BG",
+        "intra_url": "https://profile.intra.42.fr/users/Mabahani",
+        "cg_username": "MABAHANI",
+        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=99794482438364&format=profile_avatar",
+        "cg_url": "https://www.codingame.com/profile/MABAHANI",
         "school_rank": 28,
-        "global_rank": 634,
+        "global_rank": 664,
         "league": "gold"
     },
     {
@@ -373,7 +373,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=95421746163348&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/hikaruu",
         "school_rank": 29,
-        "global_rank": 694,
+        "global_rank": 683,
         "league": "gold"
     },
     {
@@ -386,7 +386,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=116814823378467&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/Vinsmoke_V1",
         "school_rank": 30,
-        "global_rank": 698,
+        "global_rank": 687,
         "league": "gold"
     },
     {
@@ -399,7 +399,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=104487380135808&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/TheLittleSnake",
         "school_rank": 31,
-        "global_rank": 720,
+        "global_rank": 735,
         "league": "gold"
     },
     {
@@ -412,20 +412,20 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=124500926983867",
         "cg_url": "https://www.codingame.com/profile/Monabid",
         "school_rank": 32,
-        "global_rank": 752,
+        "global_rank": 781,
         "league": "gold"
     },
     {
-        "id": 52,
-        "intra_login": "ressalhi",
-        "intra_avatar": "https://cdn.intra.42.fr/users/5dea14fcbad8b66c599d702e4c4ffc15/medium_ressalhi.jpg",
+        "id": 119,
+        "intra_login": "ysaber",
+        "intra_avatar": "https://cdn.intra.42.fr/users/8cf74331598a9dd64699db098e1679f1/medium_ysaber.jpeg",
         "intra_campus": "BG",
-        "intra_url": "https://profile.intra.42.fr/users/ressalhi",
-        "cg_username": "EXPO_EX",
-        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=92189405804457&format=profile_avatar",
-        "cg_url": "https://www.codingame.com/profile/EXPO_EX",
+        "intra_url": "https://profile.intra.42.fr/users/ysaber",
+        "cg_username": "ezekiel01",
+        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=124872220696833&format=profile_avatar",
+        "cg_url": "https://www.codingame.com/profile/ezekiel01",
         "school_rank": 33,
-        "global_rank": 759,
+        "global_rank": 791,
         "league": "gold"
     },
     {
@@ -438,20 +438,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=117184148391816&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/Dibrhm",
         "school_rank": 34,
-        "global_rank": 790,
-        "league": "gold"
-    },
-    {
-        "id": 119,
-        "intra_login": "ysaber",
-        "intra_avatar": "https://cdn.intra.42.fr/users/8cf74331598a9dd64699db098e1679f1/medium_ysaber.jpeg",
-        "intra_campus": "BG",
-        "intra_url": "https://profile.intra.42.fr/users/ysaber",
-        "cg_username": "ezekiel01",
-        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=124872220696833&format=profile_avatar",
-        "cg_url": "https://www.codingame.com/profile/ezekiel01",
-        "school_rank": 35,
-        "global_rank": 803,
+        "global_rank": 802,
         "league": "gold"
     },
     {
@@ -463,20 +450,7 @@
         "cg_username": "skrom00",
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=116851122420352&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/skrom00",
-        "school_rank": 36,
-        "global_rank": 836,
-        "league": "gold"
-    },
-    {
-        "id": 135,
-        "intra_login": "fbouibao",
-        "intra_avatar": "https://cdn.intra.42.fr/users/ca2db420fa3cf573eac9d8664a935473/medium_fbouibao.jpg",
-        "intra_campus": "BG",
-        "intra_url": "https://profile.intra.42.fr/users/fbouibao",
-        "cg_username": "fbouibao",
-        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=64404580470054&format=profile_avatar",
-        "cg_url": "https://www.codingame.com/profile/fbouibao",
-        "school_rank": 37,
+        "school_rank": 35,
         "global_rank": 842,
         "league": "gold"
     },
@@ -489,8 +463,8 @@
         "cg_username": "abouramd",
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125115081752472&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/abouramd",
-        "school_rank": 38,
-        "global_rank": 856,
+        "school_rank": 36,
+        "global_rank": 851,
         "league": "gold"
     },
     {
@@ -502,8 +476,21 @@
         "cg_username": "Kaneki_21",
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=124500926983867",
         "cg_url": "https://www.codingame.com/profile/Kaneki_21",
-        "school_rank": 39,
-        "global_rank": 857,
+        "school_rank": 37,
+        "global_rank": 854,
+        "league": "gold"
+    },
+    {
+        "id": 135,
+        "intra_login": "fbouibao",
+        "intra_avatar": "https://cdn.intra.42.fr/users/ca2db420fa3cf573eac9d8664a935473/medium_fbouibao.jpg",
+        "intra_campus": "BG",
+        "intra_url": "https://profile.intra.42.fr/users/fbouibao",
+        "cg_username": "fbouibao",
+        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=64404580470054&format=profile_avatar",
+        "cg_url": "https://www.codingame.com/profile/fbouibao",
+        "school_rank": 38,
+        "global_rank": 858,
         "league": "gold"
     },
     {
@@ -515,8 +502,21 @@
         "cg_username": "YeGoRenji",
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=99796822981153&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/YeGoRenji",
+        "school_rank": 39,
+        "global_rank": 930,
+        "league": "gold"
+    },
+    {
+        "id": 52,
+        "intra_login": "ressalhi",
+        "intra_avatar": "https://cdn.intra.42.fr/users/5dea14fcbad8b66c599d702e4c4ffc15/medium_ressalhi.jpg",
+        "intra_campus": "BG",
+        "intra_url": "https://profile.intra.42.fr/users/ressalhi",
+        "cg_username": "EXPO_EX",
+        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=92189405804457&format=profile_avatar",
+        "cg_url": "https://www.codingame.com/profile/EXPO_EX",
         "school_rank": 40,
-        "global_rank": 934,
+        "global_rank": 932,
         "league": "gold"
     },
     {
@@ -542,7 +542,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=116688108946897&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/ouzer",
         "school_rank": 42,
-        "global_rank": 951,
+        "global_rank": 952,
         "league": "gold"
     },
     {
@@ -555,7 +555,20 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125085706506443&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/0xshel",
         "school_rank": 43,
-        "global_rank": 994,
+        "global_rank": 981,
+        "league": "silver"
+    },
+    {
+        "id": 136,
+        "intra_login": "ahamdaou",
+        "intra_avatar": "https://cdn.intra.42.fr/users/b1d6684ab4ff992ecddc18239509b950/medium_ahamdaou.jpg",
+        "intra_campus": "BG",
+        "intra_url": "https://profile.intra.42.fr/users/ahamdaou",
+        "cg_username": "ahamdaou",
+        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=53397740187465&format=profile_avatar",
+        "cg_url": "https://www.codingame.com/profile/ahamdaou",
+        "school_rank": 44,
+        "global_rank": 1005,
         "league": "silver"
     },
     {
@@ -567,21 +580,8 @@
         "cg_username": "h1cham",
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=121660045677568&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/h1cham",
-        "school_rank": 44,
-        "global_rank": 1248,
-        "league": "silver"
-    },
-    {
-        "id": 40,
-        "intra_login": "hsaktiwy",
-        "intra_avatar": "https://cdn.intra.42.fr/users/de5acf1a68214c79d800c3d0a07ac65d/medium_hsaktiwy.jpg",
-        "intra_campus": "KH",
-        "intra_url": "https://profile.intra.42.fr/users/hsaktiwy",
-        "cg_username": "GoodDevel",
-        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=115898580548213&format=profile_avatar",
-        "cg_url": "https://www.codingame.com/profile/GoodDevel",
         "school_rank": 45,
-        "global_rank": 1256,
+        "global_rank": 1243,
         "league": "silver"
     },
     {
@@ -594,20 +594,20 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125243181031079&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/esafouan",
         "school_rank": 46,
-        "global_rank": 1269,
+        "global_rank": 1247,
         "league": "silver"
     },
     {
-        "id": 41,
-        "intra_login": "azgaoua",
-        "intra_avatar": "https://cdn.intra.42.fr/users/afbd533d4ab24dadcded8e38d9207b56/medium_azgaoua.jpg",
+        "id": 40,
+        "intra_login": "hsaktiwy",
+        "intra_avatar": "https://cdn.intra.42.fr/users/de5acf1a68214c79d800c3d0a07ac65d/medium_hsaktiwy.jpg",
         "intra_campus": "KH",
-        "intra_url": "https://profile.intra.42.fr/users/azgaoua",
-        "cg_username": "azgaoua",
-        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125310406839256&format=profile_avatar",
-        "cg_url": "https://www.codingame.com/profile/azgaoua",
+        "intra_url": "https://profile.intra.42.fr/users/hsaktiwy",
+        "cg_username": "GoodDevel",
+        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=115898580548213&format=profile_avatar",
+        "cg_url": "https://www.codingame.com/profile/GoodDevel",
         "school_rank": 47,
-        "global_rank": 1271,
+        "global_rank": 1252,
         "league": "silver"
     },
     {
@@ -620,20 +620,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125120145772260&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/proxy-o",
         "school_rank": 48,
-        "global_rank": 1279,
-        "league": "silver"
-    },
-    {
-        "id": 136,
-        "intra_login": "ahamdaou",
-        "intra_avatar": "https://cdn.intra.42.fr/users/b1d6684ab4ff992ecddc18239509b950/medium_ahamdaou.jpg",
-        "intra_campus": "BG",
-        "intra_url": "https://profile.intra.42.fr/users/ahamdaou",
-        "cg_username": "ahamdaou",
-        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=53397740187465&format=profile_avatar",
-        "cg_url": "https://www.codingame.com/profile/ahamdaou",
-        "school_rank": 49,
-        "global_rank": 1317,
+        "global_rank": 1293,
         "league": "silver"
     },
     {
@@ -645,8 +632,21 @@
         "cg_username": "ncj21",
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=96384566438909&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/ncj21",
+        "school_rank": 49,
+        "global_rank": 1343,
+        "league": "silver"
+    },
+    {
+        "id": 41,
+        "intra_login": "azgaoua",
+        "intra_avatar": "https://cdn.intra.42.fr/users/afbd533d4ab24dadcded8e38d9207b56/medium_azgaoua.jpg",
+        "intra_campus": "KH",
+        "intra_url": "https://profile.intra.42.fr/users/azgaoua",
+        "cg_username": "azgaoua",
+        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125310406839256&format=profile_avatar",
+        "cg_url": "https://www.codingame.com/profile/azgaoua",
         "school_rank": 50,
-        "global_rank": 1330,
+        "global_rank": 1370,
         "league": "silver"
     },
     {
@@ -659,7 +659,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125422623810242&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/InnerVoid",
         "school_rank": 51,
-        "global_rank": 1452,
+        "global_rank": 1472,
         "league": "silver"
     },
     {
@@ -672,7 +672,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=114532647733957&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/Abdoo",
         "school_rank": 52,
-        "global_rank": 1498,
+        "global_rank": 1495,
         "league": "silver"
     },
     {
@@ -685,7 +685,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125186886081984&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/-Charlie.py",
         "school_rank": 53,
-        "global_rank": 1507,
+        "global_rank": 1508,
         "league": "silver"
     },
     {
@@ -698,7 +698,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=124574129632465&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/otamrani",
         "school_rank": 54,
-        "global_rank": 1615,
+        "global_rank": 1600,
         "league": "silver"
     },
     {
@@ -711,7 +711,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125355569265319&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/msitni",
         "school_rank": 55,
-        "global_rank": 1635,
+        "global_rank": 1626,
         "league": "silver"
     },
     {
@@ -724,7 +724,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125268620577946&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/IIZoom",
         "school_rank": 56,
-        "global_rank": 1656,
+        "global_rank": 1665,
         "league": "silver"
     },
     {
@@ -737,7 +737,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=99814545267159&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/Ryozaki",
         "school_rank": 57,
-        "global_rank": 1690,
+        "global_rank": 1700,
         "league": "silver"
     },
     {
@@ -763,7 +763,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=124519727388442&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/.Destiny",
         "school_rank": 59,
-        "global_rank": 1737,
+        "global_rank": 1780,
         "league": "silver"
     },
     {
@@ -776,7 +776,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=118628723582742&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/obahi",
         "school_rank": 60,
-        "global_rank": 1792,
+        "global_rank": 1789,
         "league": "silver"
     },
     {
@@ -789,20 +789,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=95878068079641&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/BAANI",
         "school_rank": 61,
-        "global_rank": 1811,
-        "league": "silver"
-    },
-    {
-        "id": 158,
-        "intra_login": "bbenidar",
-        "intra_avatar": "https://cdn.intra.42.fr/users/3b27179ab60834251f0e8873e93dd529/medium_bbenidar.jpeg",
-        "intra_campus": "KH",
-        "intra_url": "https://profile.intra.42.fr/users/bbenidar",
-        "cg_username": "zzombie",
-        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125131169340829&format=profile_avatar",
-        "cg_url": "https://www.codingame.com/profile/zzombie",
-        "school_rank": 62,
-        "global_rank": 1822,
+        "global_rank": 1790,
         "league": "silver"
     },
     {
@@ -814,21 +801,21 @@
         "cg_username": "JUST_OSMOS",
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=124500926983867",
         "cg_url": "https://www.codingame.com/profile/JUST_OSMOS",
-        "school_rank": 63,
-        "global_rank": 1841,
+        "school_rank": 62,
+        "global_rank": 1836,
         "league": "silver"
     },
     {
-        "id": 143,
-        "intra_login": "ynidkouc",
-        "intra_avatar": "https://cdn.intra.42.fr/users/1aa67cf37c921bf3536ef6748c626eec/medium_ynidkouc.jpg",
+        "id": 158,
+        "intra_login": "bbenidar",
+        "intra_avatar": "https://cdn.intra.42.fr/users/3b27179ab60834251f0e8873e93dd529/medium_bbenidar.jpeg",
         "intra_campus": "KH",
-        "intra_url": "https://profile.intra.42.fr/users/ynidkouc",
-        "cg_username": "__Hero__",
-        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=114366886790804&format=profile_avatar",
-        "cg_url": "https://www.codingame.com/profile/__Hero__",
-        "school_rank": 64,
-        "global_rank": 2020,
+        "intra_url": "https://profile.intra.42.fr/users/bbenidar",
+        "cg_username": "zzombie",
+        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125131169340829&format=profile_avatar",
+        "cg_url": "https://www.codingame.com/profile/zzombie",
+        "school_rank": 63,
+        "global_rank": 1901,
         "league": "silver"
     },
     {
@@ -840,8 +827,21 @@
         "cg_username": "EREN7777",
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=124508829553598&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/EREN7777",
+        "school_rank": 64,
+        "global_rank": 2027,
+        "league": "silver"
+    },
+    {
+        "id": 143,
+        "intra_login": "ynidkouc",
+        "intra_avatar": "https://cdn.intra.42.fr/users/1aa67cf37c921bf3536ef6748c626eec/medium_ynidkouc.jpg",
+        "intra_campus": "KH",
+        "intra_url": "https://profile.intra.42.fr/users/ynidkouc",
+        "cg_username": "__Hero__",
+        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=114366886790804&format=profile_avatar",
+        "cg_url": "https://www.codingame.com/profile/__Hero__",
         "school_rank": 65,
-        "global_rank": 2057,
+        "global_rank": 2038,
         "league": "silver"
     },
     {
@@ -854,7 +854,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=99812708177489&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/ESCANOUR",
         "school_rank": 66,
-        "global_rank": 2090,
+        "global_rank": 2099,
         "league": "silver"
     },
     {
@@ -867,20 +867,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125007081548329&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/PiPe-mdoulah",
         "school_rank": 67,
-        "global_rank": 2113,
-        "league": "silver"
-    },
-    {
-        "id": 53,
-        "intra_login": "zouddach",
-        "intra_avatar": "https://cdn.intra.42.fr/users/f09a3e305d77ea2f3d04821183f71c1a/medium_zouddach.jpg",
-        "intra_campus": "KH",
-        "intra_url": "https://profile.intra.42.fr/users/zouddach",
-        "cg_username": "a7a",
-        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125238348038614&format=profile_avatar",
-        "cg_url": "https://www.codingame.com/profile/a7a",
-        "school_rank": 68,
-        "global_rank": 2132,
+        "global_rank": 2112,
         "league": "silver"
     },
     {
@@ -892,8 +879,21 @@
         "cg_username": "ElderGriffin",
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=124607820172413&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/ElderGriffin",
+        "school_rank": 68,
+        "global_rank": 2155,
+        "league": "silver"
+    },
+    {
+        "id": 53,
+        "intra_login": "zouddach",
+        "intra_avatar": "https://cdn.intra.42.fr/users/f09a3e305d77ea2f3d04821183f71c1a/medium_zouddach.jpg",
+        "intra_campus": "KH",
+        "intra_url": "https://profile.intra.42.fr/users/zouddach",
+        "cg_username": "a7a",
+        "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125238348038614&format=profile_avatar",
+        "cg_url": "https://www.codingame.com/profile/a7a",
         "school_rank": 69,
-        "global_rank": 2154,
+        "global_rank": 2157,
         "league": "silver"
     },
     {
@@ -906,7 +906,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125121526113278&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/SongHunter",
         "school_rank": 70,
-        "global_rank": 2176,
+        "global_rank": 2177,
         "league": "silver"
     },
     {
@@ -919,7 +919,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=111651961284043&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/ykhayri",
         "school_rank": 71,
-        "global_rank": 2245,
+        "global_rank": 2246,
         "league": "silver"
     },
     {
@@ -932,7 +932,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125355709984780&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/salahgouzi",
         "school_rank": 72,
-        "global_rank": 2287,
+        "global_rank": 2290,
         "league": "silver"
     },
     {
@@ -945,7 +945,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=99799303288691&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/mallaoui",
         "school_rank": 73,
-        "global_rank": 2309,
+        "global_rank": 2311,
         "league": "bronze"
     },
     {
@@ -958,7 +958,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=124500926983867",
         "cg_url": "https://www.codingame.com/profile/SegFaultKing",
         "school_rank": 74,
-        "global_rank": 2311,
+        "global_rank": 2312,
         "league": "bronze"
     },
     {
@@ -971,7 +971,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125535069140095&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/Mdarify-13",
         "school_rank": 75,
-        "global_rank": 2315,
+        "global_rank": 2328,
         "league": "bronze"
     },
     {
@@ -984,7 +984,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=116530364498972&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/Bihixd",
         "school_rank": 76,
-        "global_rank": 2544,
+        "global_rank": 2558,
         "league": "bronze"
     },
     {
@@ -997,7 +997,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=95141624952315&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/Rghouzra",
         "school_rank": 77,
-        "global_rank": 2576,
+        "global_rank": 2578,
         "league": "bronze"
     },
     {
@@ -1023,7 +1023,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125095403948901&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/Simodev00",
         "school_rank": 79,
-        "global_rank": 2965,
+        "global_rank": 2964,
         "league": "wood_1"
     },
     {
@@ -1244,7 +1244,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=124511140284972&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/Sgtsu",
         "school_rank": 96,
-        "global_rank": 3758,
+        "global_rank": 3762,
         "league": "wood_1"
     },
     {
@@ -1257,7 +1257,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=118331748562214&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/_pp",
         "school_rank": 97,
-        "global_rank": 3760,
+        "global_rank": 3764,
         "league": "wood_1"
     },
     {
@@ -1270,7 +1270,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=124512322777684&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/oussama_lam",
         "school_rank": 98,
-        "global_rank": 3853,
+        "global_rank": 3857,
         "league": "wood_1"
     },
     {
@@ -1283,7 +1283,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=124543249277931&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/sbython",
         "school_rank": 99,
-        "global_rank": 3870,
+        "global_rank": 3874,
         "league": "wood_1"
     },
     {
@@ -1296,7 +1296,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=124602427129343&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/45Re",
         "school_rank": 100,
-        "global_rank": 3916,
+        "global_rank": 3920,
         "league": "wood_1"
     },
     {
@@ -1309,7 +1309,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=124500926983867",
         "cg_url": "https://www.codingame.com/profile/miloki",
         "school_rank": 101,
-        "global_rank": 3979,
+        "global_rank": 3983,
         "league": "wood_1"
     },
     {
@@ -1322,7 +1322,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=124500926983867",
         "cg_url": "https://www.codingame.com/profile/_Dexter",
         "school_rank": 102,
-        "global_rank": 3986,
+        "global_rank": 3990,
         "league": "wood_1"
     },
     {
@@ -1335,7 +1335,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=117628369800453&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/moulderham",
         "school_rank": 103,
-        "global_rank": 3988,
+        "global_rank": 3992,
         "league": "wood_1"
     },
     {
@@ -1348,7 +1348,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=81993283801561&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/aklaikel",
         "school_rank": 104,
-        "global_rank": 4009,
+        "global_rank": 4013,
         "league": "wood_1"
     },
     {
@@ -1361,7 +1361,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=112077686052871&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/sultaaaane",
         "school_rank": 105,
-        "global_rank": 4101,
+        "global_rank": 4104,
         "league": "wood_1"
     },
     {
@@ -1374,7 +1374,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=73350386159644&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/SaltySushi",
         "school_rank": 106,
-        "global_rank": 4132,
+        "global_rank": 4136,
         "league": "wood_1"
     },
     {
@@ -1387,7 +1387,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=116988746003884&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/IGOX008",
         "school_rank": 107,
-        "global_rank": 4173,
+        "global_rank": 4177,
         "league": "wood_1"
     },
     {
@@ -1400,7 +1400,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=99860842647384&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/Narsus",
         "school_rank": 108,
-        "global_rank": 4208,
+        "global_rank": 4212,
         "league": "wood_1"
     },
     {
@@ -1413,7 +1413,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=124500926983867",
         "cg_url": "https://www.codingame.com/profile/bamrouch",
         "school_rank": 109,
-        "global_rank": 4395,
+        "global_rank": 4398,
         "league": "wood_1"
     },
     {
@@ -1426,7 +1426,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=117119543318385&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/aheesu",
         "school_rank": 110,
-        "global_rank": 4400,
+        "global_rank": 4403,
         "league": "wood_1"
     },
     {
@@ -1439,7 +1439,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=85980969104545&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/TheRealFox",
         "school_rank": 111,
-        "global_rank": 4510,
+        "global_rank": 4513,
         "league": "wood_1"
     },
     {
@@ -1452,7 +1452,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=124500926983867",
         "cg_url": "https://www.codingame.com/profile/asmawithoute",
         "school_rank": 112,
-        "global_rank": 4620,
+        "global_rank": 4623,
         "league": "wood_1"
     },
     {
@@ -1465,7 +1465,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=125047403070954&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/chdid2",
         "school_rank": 113,
-        "global_rank": 4661,
+        "global_rank": 4664,
         "league": "wood_1"
     },
     {
@@ -1478,7 +1478,7 @@
         "cg_avatar": "https://static.codingame.com/servlet/fileservlet?id=111132447870956&format=profile_avatar",
         "cg_url": "https://www.codingame.com/profile/magma_13",
         "school_rank": 114,
-        "global_rank": 4897,
+        "global_rank": 4900,
         "league": "wood_2"
     }
 ]
