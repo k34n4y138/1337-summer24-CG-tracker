@@ -2,9 +2,11 @@ import sqlite3, requests, time, json
 
 
 
-INTRA_UID = 'XXXXX'
-INTRA_SECRETgit = 'XXXXXX'
+INTRA_UID = 'u-s4t2ud-f2f56b1301f6140a758d6622f62730d3deb221be1fa9a374bb5281e842f0e7d5'
+INTRA_SECRET = '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'
 
+COMPETITION_START_DATE = "2021-06-11T00:00:00Z"
+COMPETITION_END_DATE = "2021-06-24T23:59:59Z"
 
 """
 this script will patch the database to include new columns for the existing tables
@@ -61,20 +63,110 @@ db.commit()
     "cg_username": "s4t2ud",
     "cg_avatar": "https://www.codingame.com/servlet/fileservlet?id=2000000000000",
     "cg_url": "https://www.codingame.com/profile/2000000000000",
-    "school_rank: 1,
+    "rank_history": [
+    {
+    "date": "2021-01-01T00:00:00Z",
+    "school_rank": 1,
     "global_rank": 1,
     "league": "legend"
+    "logtime": 15,
+    "submissions": 5
+    },{
+     {
+    "date": "2021-01-02",
+    "school_rank": 5, // highest rank of that day
+    "global_rank": 1, // highest rank of that day
+    "league": "legend" / highest league of that day
+    "logtime": 27 // count of how many instances with online since
+    "submissions": 5 // count of distinct submission ids of that day
+    }
+    },{...}
+    ],
 }
 """
 
-targets = conn.execute('SELECT id, intra_login, intra_avatar, cg_username, cg_avatar, intra_campus FROM codingamer WHERE intra_login IS NOT NULL and staff_ban = 0').fetchall()
+def get_player_logtime(cg_id):
+    # count the number of instances with online since per day
+    # date field is created_at and is datetime, group by date
+    cursor = conn.execute('SELECT strftime("%Y-%m-%d", created_at) as date, count(*) as logtime FROM rankscrap WHERE codingamer_id = ? AND online_since NOT NULL GROUP BY date', (cg_id,))
+    return {row[0]: row[1] for row in cursor}
 
-export = []
+
+def get_player_submissions(cg_id):
+    """
+    get the number of distinct submission per day, group by date
+    submission_id is not unique, and might appear in multiple days
+    assign it to the first date it appears in
+    """
+    query = '''
+        SELECT date, count(submission_time) as submissions 
+        FROM (
+            SELECT submission_time, min(strftime("%Y-%m-%d", created_at)) as date 
+            FROM rankscrap 
+            WHERE codingamer_id = ? 
+            GROUP BY submission_time
+        ) 
+        GROUP BY date
+    '''
+    cursor = conn.execute(query, (cg_id,))
+    return {row[0]: row[1] for row in cursor}
+
+
+def get_player_rank_advancement(cg_id):
+    """
+    get the highest rank of a player since first occurrence
+    """
+    query = '''
+        SELECT strftime("%Y-%m-%d", created_at) as date, avg(global_rank) as global_rank, avg(school_rank) as school_rank, max(league_id) as league_id
+        FROM rankscrap
+        WHERE codingamer_id = ?
+        GROUP BY date
+    '''
+    cursor = conn.execute(query, (cg_id,))
+    return {row[0]: {'global_rank': row[1], 'school_rank': row[2], 'league_id': row[3]} for row in cursor}
+
+
+def get_player_history(cg_id):
+    """
+    merge the logtime, submissions, ranks and leagues of a player
+    """
+    logtime = get_player_logtime(cg_id)
+    submissions = get_player_submissions(cg_id)
+    rank_advancement = get_player_rank_advancement(cg_id)
+    history = []
+    for date in sorted(set(logtime.keys()) | set(submissions.keys()) | set(rank_advancement.keys())):
+        history.append({
+            'date': date,
+            'logtime': logtime.get(date, 0) * 15, # 15 minutes per logtime
+            'submissions': submissions.get(date, 0),
+            **rank_advancement.get(date, {'global_rank': -1, 'league_id': 0})
+        })
+        history[-1]['league'] = leagues[history[-1]['league_id']]
+    return history
 
 leagues = ['wood_2', 'wood_1', 'bronze', 'silver', 'gold', 'legend']
 
+
+def get_player_league_inception(cg_id):
+    """
+    for each league, extract the date the player entered it
+    """
+    query = '''
+        SELECT min(strftime("%Y-%m-%d", created_at)) as date, league_id
+        FROM rankscrap
+        WHERE codingamer_id = ?
+        GROUP BY league_id
+    '''
+    cursor = conn.execute(query, (cg_id,))
+    return {leagues[row[1]]: row[0] for row in cursor}
+
+targets = conn.execute('SELECT id, intra_login, intra_avatar, cg_username, cg_avatar, intra_campus, cg_uuid FROM codingamer WHERE intra_login IS NOT NULL and staff_ban = 0').fetchall()
+
+export = []
+
+
 for player in targets:
-    cg_url = f'https://www.codingame.com/profile/{player[3]}'
+    cg_url = f'https://www.codingame.com/profile/{player[6]}'
     intra_url = f'https://profile.intra.42.fr/users/{player[1]}'
     last_scrap = conn.execute('SELECT id, global_rank, school_rank, league_id FROM rankscrap WHERE codingamer_id = ? ORDER BY id DESC LIMIT 1', (player[0],)).fetchone()
     if not last_scrap:
@@ -91,7 +183,9 @@ for player in targets:
         'cg_url': cg_url,
         'school_rank': last_scrap[2],
         'global_rank': last_scrap[1],
-        'league': league
+        'league': league,
+        'rank_history': get_player_history(player[0]),
+        'league_inception': get_player_league_inception(player[0])
     })
 
 
