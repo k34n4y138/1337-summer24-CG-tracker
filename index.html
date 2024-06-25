@@ -152,15 +152,14 @@
       let tbody = document.createElement("tbody");
       for (let i = 0; i < 5; i++) {
         let box = document.getElementById("leaderboard-" + (i + 1))
-        // box.setAttribute("onclick", "window.location.href = 'info.html?login=" + data[i].intra_login + "'");
+        box.setAttribute("onclick", "click_info_delayer('" + data[i].intra_login + "')");
         // append cursor pointer to styles
         // box.setAttribute("style", box.getAttribute("style") + ";cursor:pointer");
         box.getElementsByTagName("p")[0].setAttribute("data-rank-swap", data[i].global_rank);
         box.getElementsByClassName("intra-image")[0].setAttribute("src", data[i].intra_avatar);
         box.getElementsByClassName("mini-image")[0].setAttribute("src", data[i].cg_avatar);
         box.getElementsByClassName("mini-image")[1].setAttribute("src", "imgs/" + data[i].league.split("_")[0].toLowerCase() + ".png");
-        box.getElementsByClassName("mini-image")[0].setAttribute("onclick", "window.location.href = '" + data[i].cg_url+"'");
-        box.getElementsByClassName("intra-image")[0].setAttribute("onclick", "window.location.href = '" + data[i].intra_url+"'");
+
         box.getElementsByTagName("p")[1].innerHTML = data[i].intra_login;
         box.getElementsByTagName("p")[2].innerHTML = data[i].cg_username;
         box.getElementsByTagName("p")[3].innerHTML = data[i].intra_campus;
@@ -181,12 +180,11 @@
         let intraimg = document.createElement("img");
         intraimg.setAttribute("src", user.intra_avatar);
         intraimg.setAttribute("class", "intra-image table-image");
-        intraimg.setAttribute("onclick", "window.location.href = '" + user.intra_url+"'");
+
         images.appendChild(intraimg);
         miniimage = document.createElement("img");
         miniimage.setAttribute("src", user.cg_avatar);
         miniimage.setAttribute("class", "mini-image table-image");
-        miniimage.setAttribute("onclick", "window.location.href = '" + user.cg_url+"'");
         images.appendChild(miniimage);
 
         let login_intra = document.createElement("h6");
@@ -214,7 +212,7 @@
         row.appendChild(global_rank);
         row.appendChild(schoolrank);
         row.appendChild(campuse);
-        // row.setAttribute("onclick", "window.location.href = 'info.html?login=" + user.intra.login + "'");
+        row.setAttribute("onclick", "click_info_delayer('" + user.intra_login + "')");
         tbody.appendChild(row);
         table.appendChild(tbody);
       }
@@ -247,6 +245,23 @@
     }
 
     fetch_leaderboard();
+
+    var delayer_click_info = {
+      "intra_login": "",
+      "counter": 0
+    }
+    function click_info_delayer(intra_login){
+      const TARGET_COUNTER = 3;
+      if(delayer_click_info.intra_login == intra_login){
+        delayer_click_info.counter++;
+        if(delayer_click_info.counter == TARGET_COUNTER){
+          window.location.href = "info.html?login=" + intra_login;
+        }
+      }else{
+        delayer_click_info.intra_login = intra_login;
+        delayer_click_info.counter = 1;
+      }
+    }
   </script>
 </body>
 
