@@ -117,7 +117,7 @@ def get_player_rank_advancement(cg_id):
     get the highest rank of a player since first occurrence
     """
     query = '''
-        SELECT strftime("%Y-%m-%d", created_at) as date, avg(global_rank) as global_rank, avg(school_rank) as school_rank, max(league_id) as league_id
+        SELECT strftime("%Y-%m-%d", created_at) as date, min(global_rank) as global_rank, min(school_rank) as school_rank, max(league_id) as league_id
         FROM rankscrap
         WHERE codingamer_id = ?
         GROUP BY date
