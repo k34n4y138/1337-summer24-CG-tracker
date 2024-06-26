@@ -63,7 +63,7 @@
                     <div id="league-banner" class="d-flex align-items-center justify-content-center p-3 flex-row"
                         style="width: 100%;height: 90px">
                         <img id='league-logo' src="imgs/legend.png" height="80" width="80">
-                        <h3 id="league" class="m-0 mt-1">LEGEND</h3>
+                        
                     </div>
                     <div style="width: 100%" class="d-flex flex-column h-100 py-2 px-5">
                         <div id="legend-date-line" class="w-100 h-100 d-flex">
@@ -266,7 +266,6 @@
             document.getElementById("codingame-pseudo").innerHTML = profile.cg_username;
             document.getElementById("codingame-pseudo").onclick = () => window.open(profile.cg_url, "_blank");
             document.getElementById("codingame-image").setAttribute("src", profile.cg_avatar);
-            document.getElementById("league").innerHTML = profile.league;
             document.getElementById("global-rank").innerHTML = profile.global_rank;
             document.getElementById("global-rank").appendChild(document.createElement("sup")).innerHTML = get_rank_suffix(profile.global_rank);
             document.getElementById("school-rank").innerHTML = profile.school_rank;
@@ -278,7 +277,7 @@
             document.getElementById("league-banner").classList.add(_league + "-banner");
             // date must "2024-06-11" -> be DD/MM
             document.getElementById("legend-date").innerHTML = profile.league_inception.legend?.split("-").reverse().slice(0, 2).join(" / ") || "N/A";
-            document.getElementById("gold-date").innerHTML = profile.league_inception.legend?.split("-").reverse().slice(0, 2).join(" / ") || "N/A";
+            document.getElementById("gold-date").innerHTML = profile.league_inception.gold?.split("-").reverse().slice(0, 2).join(" / ") || "N/A";
             document.getElementById("silver-date").innerHTML = profile.league_inception.silver?.split("-").reverse().slice(0, 2).join(" / ") || "N/A";
             document.getElementById("bronze-date").innerHTML = profile.league_inception.bronze?.split("-").reverse().slice(0, 2).join(" / ") || "N/A";
 
@@ -302,7 +301,7 @@
                 data: {
                     datasets: [{
                         data: _data,
-                        tension: 0.5,
+                        tension: 0.3,
                         backgroundColor: _league_colors[_league],
                         borderColor: _league_colors[_league],
                         segment: {
@@ -329,7 +328,7 @@
                         },
                         title: {
                             display: true,
-                            text: "Global Rank History"
+                            text: "Top Global Rank History"
                         }
                     }
                 }
@@ -344,6 +343,7 @@
                 _push_labels.push(_date);
             }
             let _push_data = profile.rank_history.map(item => item.submissions);
+            let _logtime_data = profile.rank_history.map(item => Math.round(item.logtime / 60));
             new Chart(document.getElementById("pushcounts"), {
                 type: 'bar',
                 data: {
@@ -353,6 +353,13 @@
                         tension: 0.5,
                         backgroundColor: _league_colors[_league],
                         borderColor: _league_colors[_league],
+                        label: "Push Counts(Apprx)",
+                    },
+                    {
+                        data: _logtime_data,
+                        backgroundColor: '#3498db',
+                        borderColor: '#3498db',
+                        label: "Logtime (Hr)",
                     }]
                 },
                 options: {
@@ -373,11 +380,11 @@
                     },
                     plugins: {
                         legend: {
-                            display: false
+                            display: true
                         },
                         title: {
                             display: true,
-                            text: "Arena Submission Rate"
+                            text: "Arena Activity Rate"
                         }
                     }
                 }
