@@ -25,14 +25,15 @@
     </div>
     <nav class="navbar bg-body-tertiary">
         <div class="container">
-            <a class="navbar-brand" href="./index.html">
+            <a class="navbar-brand" href="javascript:go_home()">
                 <img src="imgs/1337.png" width="50" height="50">
+            </a>
             </a>
         </div>
     </nav>
     <div class="container-lg position-relative">
         <div style="width: 100%;height:65px" class="d-flex flex-row align-items-center mb-1">
-            <a href="./index.html" class="ms-2 text-decoration-none text-white">
+            <a href="javascript:go_home()" class="ms-2 text-decoration-none text-white">
                 <svg fill="#dee2e6" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
                     stroke-miterlimit="2" style="width: 30px;height: 30px;" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +42,7 @@
                         fill-rule="nonzero" />
                 </svg>
             </a>
-            <a href="./index.html" class="ms-2 text-decoration-none text-white">
+            <a href="javascript:go_home()" class="ms-2 text-decoration-none text-white">
                 <p class="m-0 text-muted">Codingame 2023 Fall Challenge Leaderboard</p>
             </a>
         </div>
@@ -63,7 +64,7 @@
                     <div id="league-banner" class="d-flex align-items-center justify-content-center p-3 flex-row"
                         style="width: 100%;height: 90px">
                         <img id='league-logo' src="imgs/legend.png" height="80" width="80">
-                        
+
                     </div>
                     <div style="width: 100%" class="d-flex flex-column h-100 py-2 px-5">
                         <div id="legend-date-line" class="w-100 h-100 d-flex">
@@ -285,7 +286,7 @@
             // filter histories with same date, keep ones with highest rank
             // filter history with stability less than 95
             // reverse
-            let _data = profile.rank_history.map((item) => ({ "x": format_date(Date.parse(item.date)), "y": item.global_rank, "z": item.league.split("_")[0].toLowerCase()}));
+            let _data = profile.rank_history.map((item) => ({ "x": format_date(Date.parse(item.date)), "y": item.global_rank, "z": item.league.split("_")[0].toLowerCase() }));
             console.log(_data);
             const _league_colors = {
                 "legend": "#FF4A36A5",
@@ -404,7 +405,43 @@
                         populate_info(target);
                 })
                 .catch(error => console.log(error));
+        }
+        String.prototype.hashCode = function () {
+            var hash = 0,
+                i, chr;
+            if (this.length === 0) return hash + "";
+            for (i = 0; i < this.length; i++) {
+                chr = this.charCodeAt(i);
+                hash = ((hash << 5) - hash) + chr;
+                hash |= 0; // Convert to 32bit integer
+            }
+            return hash + "";
+        }
 
+        function get_p() {
+            return new URLSearchParams(window.location.search).get("p");
+        }
+
+        function cheeto_lock() {
+            // cheeto lock ahh security level
+            // exctract query param value from current url
+            let password = new URLSearchParams(window.location.search).get("p");
+            if (password == null)
+                return false;
+            password = password.hashCode();
+            return password?.hashCode() % 1337 == -1187;
+        }
+        function go_home() {
+            let p = get_p();
+            if (p == null) {
+                window.location.replace("index.html");
+            } else {
+                window.location.replace("index.html?p=" + p);
+            }
+        }
+
+        if (!cheeto_lock()) {
+            window.location.replace("index.html");
         }
         fetch_leaderboard();
     </script>

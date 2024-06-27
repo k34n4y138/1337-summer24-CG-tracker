@@ -30,22 +30,23 @@
   </div>
   <div class="container-xl" style="min-height: 100vh;">
     <div style="height: 600px;" class="text-center">
-        <!-- disclaimer alert -->
-        <!-- <p class="text-center alert alert-warning alert-dismissible fade show mt-2" role="alert">
+      <!-- disclaimer alert -->
+      <!-- <p class="text-center alert alert-warning alert-dismissible fade show mt-2" role="alert">
           <strong>Disclaimer:</strong> Data is updated every 15 minutes and doesn't reflect the real-time leaderboard.
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </p > -->
       <h1 class="display-3 pt-5">
         Codingame 2024 Summer Challenge
       </h1>
-      <h5> 
+      <h5>
         1337 Champions Wall of Fame
       </h5>
       <div style="width: 100%; height:350px;"
         class="d-flex flex-row gap-2 gap-sm-5 justify-content-center align-items-center">
         <div id="leaderboard-5" class="position-relative d-flex flex-column justify-content-center align-items-center"
           style="top:50px">
-          <p class="display-5 top-5" onclick="toggle_school_global_rank(this)" data-rank-swap="5"><span class="rank">5</span><sup class="ordinal" style="font-size:12pt">th</sup></p>
+          <p class="display-5 top-5" onclick="toggle_school_global_rank(this)" data-rank-swap="5"><span
+              class="rank">5</span><sup class="ordinal" style="font-size:12pt">th</sup></p>
           <div class="position-relative">
             <img src="imgs/1337.png" class="intra-image">
             <img src="imgs/1337.png" class="mini-image" style="right:-10%;bottom:0">
@@ -56,20 +57,22 @@
           <p class="text-muted m-0">MED</p>
         </div>
         <div id="leaderboard-3" class="position-relative d-flex flex-column justify-content-center align-items-center"
-        style="top:0px">
-        <p class="display-5 top-5" onclick="toggle_school_global_rank(this)" data-rank-swap="3"><span class="rank">3</span><sup class="ordinal" style="font-size:12pt">rd</sup></p>
-        <div class="position-relative">
-          <img src="imgs/1337.png" class="intra-image">
-          <img src="imgs/1337.png" class="mini-image" style="right:-10%;bottom:0">
-          <img src="imgs/legend.png" class="mini-image" style="left:-10%;bottom:0">
+          style="top:0px">
+          <p class="display-5 top-5" onclick="toggle_school_global_rank(this)" data-rank-swap="3"><span
+              class="rank">3</span><sup class="ordinal" style="font-size:12pt">rd</sup></p>
+          <div class="position-relative">
+            <img src="imgs/1337.png" class="intra-image">
+            <img src="imgs/1337.png" class="mini-image" style="right:-10%;bottom:0">
+            <img src="imgs/legend.png" class="mini-image" style="left:-10%;bottom:0">
+          </div>
+          <p class="m-0">Future...</p>
+          <p class="m-0">Is Loading</p>
+          <p class="text-muted m-0">MED</p>
         </div>
-        <p class="m-0">Future...</p>
-        <p class="m-0">Is Loading</p>
-        <p class="text-muted m-0">MED</p>
-      </div>
-      <div id="leaderboard-1" class="position-relative d-flex flex-column justify-content-center align-items-center"
+        <div id="leaderboard-1" class="position-relative d-flex flex-column justify-content-center align-items-center"
           style="top:-50px">
-          <p class="display-5 top-5" onclick="toggle_school_global_rank(this)" data-rank-swap="1"><span class="rank">1</span><sup class="ordinal" style="font-size:12pt">st</sup></p>
+          <p class="display-5 top-5" onclick="toggle_school_global_rank(this)" data-rank-swap="1"><span
+              class="rank">1</span><sup class="ordinal" style="font-size:12pt">st</sup></p>
           <div class="position-relative">
             <img src="imgs/1337.png" class="intra-image">
             <img src="imgs/1337.png" class="mini-image" style="right:-10%;bottom:0">
@@ -81,7 +84,8 @@
         </div>
         <div id="leaderboard-2" class="position-relative d-flex flex-column justify-content-center align-items-center"
           style="top:0px">
-          <p class="display-5 top-5" onclick="toggle_school_global_rank(this)" data-rank-swap="2"><span class="rank">2</span><sup class="ordinal" style="font-size:12pt">nd</sup></p>
+          <p class="display-5 top-5" onclick="toggle_school_global_rank(this)" data-rank-swap="2"><span
+              class="rank">2</span><sup class="ordinal" style="font-size:12pt">nd</sup></p>
           <div class="position-relative">
             <img src="imgs/1337.png" class="intra-image">
             <img src="imgs/1337.png" class="mini-image" style="right:-10%;bottom:0">
@@ -93,7 +97,8 @@
         </div>
         <div id="leaderboard-4" class="position-relative d-flex flex-column justify-content-center align-items-center"
           style="top:50px">
-          <p class="display-5 top-5" onclick="toggle_school_global_rank(this)" data-rank-swap="4"><span class="rank">4</span><sup class="ordinal" style="font-size:12pt">th</sup></p>
+          <p class="display-5 top-5" onclick="toggle_school_global_rank(this)" data-rank-swap="4"><span
+              class="rank">4</span><sup class="ordinal" style="font-size:12pt">th</sup></p>
           <div class="position-relative">
             <img src="imgs/1337.png" class="intra-image">
             <img src="imgs/1337.png" class="mini-image" style="right:-10%;bottom:0">
@@ -152,7 +157,7 @@
       let tbody = document.createElement("tbody");
       for (let i = 0; i < 5; i++) {
         let box = document.getElementById("leaderboard-" + (i + 1))
-        box.setAttribute("onclick", "click_info_delayer('" + data[i].intra_login + "')");
+        box.setAttribute("onclick", "click_info_delayer('" + data[i].intra_login + "','" + data[i].cg_url + "')");
         // append cursor pointer to styles
         // box.setAttribute("style", box.getAttribute("style") + ";cursor:pointer");
         box.getElementsByTagName("p")[0].setAttribute("data-rank-swap", data[i].global_rank);
@@ -212,19 +217,19 @@
         row.appendChild(global_rank);
         row.appendChild(schoolrank);
         row.appendChild(campuse);
-        row.setAttribute("onclick", "click_info_delayer('" + user.intra_login + "')");
+        row.setAttribute("onclick", "click_info_delayer('" + user.intra_login + "', '" + user.cg_url + "')");
         tbody.appendChild(row);
         table.appendChild(tbody);
       }
     }
 
-    function get_ordinal(n){
+    function get_ordinal(n) {
       let s = ["th", "st", "nd", "rd"],
-      v = n % 100;
+        v = n % 100;
       return (s[(v - 20) % 10] || s[v] || s[0]);
     }
 
-    function toggle_school_global_rank(elem){
+    function toggle_school_global_rank(elem) {
       // flip the ranks for the top 5
 
       let ranks = document.querySelectorAll("[data-rank-swap]");
@@ -250,14 +255,44 @@
       "intra_login": "",
       "counter": 0
     }
-    function click_info_delayer(intra_login){
+    String.prototype.hashCode = function () {
+      var hash = 0,
+        i, chr;
+      if (this.length === 0) return hash + "";
+      for (i = 0; i < this.length; i++) {
+        chr = this.charCodeAt(i);
+        hash = ((hash << 5) - hash) + chr;
+        hash |= 0; // Convert to 32bit integer
+      }
+      return hash + "";
+    }
+
+    function get_p(){
+      return new URLSearchParams(window.location.search).get("p");
+    }
+
+    function cheeto_lock() {
+      // cheeto lock ahh security level
+      // exctract query param value from current url
+      let password = new URLSearchParams(window.location.search).get("p");
+      if (password == null) 
+        return false;
+      password = password.hashCode();
+      return password?.hashCode() % 1337 == -1187;
+    }
+
+    function click_info_delayer(intra_login, alternative) {
       const TARGET_COUNTER = 3;
-      if(delayer_click_info.intra_login == intra_login){
+      if (!cheeto_lock()) {
+        window.location.href = alternative;
+        return;
+      }
+      if (delayer_click_info.intra_login == intra_login) {
         delayer_click_info.counter++;
-        if(delayer_click_info.counter == TARGET_COUNTER){
-          window.location.href = "info.html?login=" + intra_login;
+        if (delayer_click_info.counter == TARGET_COUNTER) {
+            window.location.href = "info.html?login=" + intra_login + "&p=" + get_p();
         }
-      }else{
+      } else {
         delayer_click_info.intra_login = intra_login;
         delayer_click_info.counter = 1;
       }
